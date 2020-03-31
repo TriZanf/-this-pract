@@ -1,7 +1,6 @@
-$("button").mouseenter(function() {
-    (this).removeClass("makeRed").addClass("makeBlue");
-});
-
-$("button").mouseleave(function() {
-    (this).removeClass("makeBlue").addClass("makeRed");
+$(document).ready(function() {
+    $(".box").on("cick", function() {
+        var classNames = $(this).split(" ");
+        $("." + className[1]).css("background-color", "red");
+    });
 });
